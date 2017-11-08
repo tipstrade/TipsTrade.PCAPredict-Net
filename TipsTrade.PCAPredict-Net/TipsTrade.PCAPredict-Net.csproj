@@ -1,7 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard1.0</TargetFramework>
+    <RootNamespace>TipsTrade.PCAPredict</RootNamespace>
+    <Authors>John Bayly</Authors>
+    <Company>TipsTrade Ltd.</Company>
+    <Copyright />
+    <PackageId>TipsTrade.PCAPredict-Net</PackageId>
+    <PackageProjectUrl>https://github.com/tipstrade/TipsTrade.PCAPredict-Net</PackageProjectUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  </ItemGroup>
 
 </Project>
