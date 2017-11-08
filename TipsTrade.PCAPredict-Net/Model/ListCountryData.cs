@@ -2,7 +2,7 @@
   /// <summary>Represents a PCA Predict List Countries Data request.</summary>
   public class ListCountryDataRequest : ApiRequestBase {
     /// <summary>Gets the service endpoint for the request.</summary>
-    protected override string ServiceEndPoint => "https://services.postcodeanywhere.co.uk/Extras/VAT/Validate/v1.10/json3.ws";
+    protected override string ServiceEndPoint => "https://services.postcodeanywhere.co.uk/Extras/Lists/CountryData/v3.00/json3.ws?";
   }
 
   /// <summary>Represents a PCA Predict List Countries Data result.</summary>
