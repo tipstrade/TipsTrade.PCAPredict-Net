@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Threading;
 using System.Threading.Tasks;
 using TipsTrade.PCAPredict.Model;
 
 namespace TipsTrade.PCAPredict {
   /// <summary>Represents a strongly typed client for interacting with the PCA Predict web services.</summary>
+  /// <see cref="!:https://www.pcapredict.com/support/webservices/"/>
   public class PCAPredictClient {
     #region Properties
     /// <summary>Gets or set the default service key to be used for any API requests.</summary>
