@@ -48,6 +48,9 @@ namespace TipsTrade.PCAPredict.Model {
     ///<summary>The current operator serving the supplied number.</summary>
     public string NetworkCode { get; set; }
 
+    /// <summary>The country code of the operator.</summary>
+    public string NetworkCountry { get; set; }
+
     ///<summary>The name of the current operator serving the supplied number.</summary>
     public string NetworkName { get; set; }
 
@@ -60,7 +63,7 @@ namespace TipsTrade.PCAPredict.Model {
     ///<summary>The type of number that was detected in the request (MOBILE, LANDLINE OR VOIP).</summary>
     [JsonProperty("NumberType")]
     [JsonConverter(typeof(StringEnumConverter))]
-    public string Type { get; set; }
+    public NumberType Type { get; set; }
     #endregion
   }
 }
