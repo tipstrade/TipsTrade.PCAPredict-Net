@@ -11,9 +11,19 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseUrl>https://github.com/tipstrade/TipsTrade.PCAPredict-Net/blob/master/LICENSE</PackageLicenseUrl>
     <Description>A .Net Standard Client Library PCA Predict API</Description>
-    <PackageReleaseNotes>v.1.0.0.0
+    <PackageReleaseNotes>v.1.0.0.1
+* Add XML documentation
+
+v.1.0.0.0
 * Initial Release.</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+    <Version>1.0.0.1</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.3\TipsTrade.PCAPredict-Net.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
