@@ -44,7 +44,11 @@
     /// <summary>Returns a string that represents the current object.</summary>
     /// <returns></returns>
     public override string ToString() {
-      return $"{Type} - {Description}";
+      if (!string.IsNullOrEmpty(Text) && (!string.IsNullOrEmpty(Description))) {
+        return $"{Text}, {Description}";
+      } else {
+        return Text;
+      }
     }
     #endregion
   }
