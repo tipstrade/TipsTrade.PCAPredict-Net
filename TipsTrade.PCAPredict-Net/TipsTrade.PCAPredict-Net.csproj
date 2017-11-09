@@ -5,9 +5,15 @@
     <RootNamespace>TipsTrade.PCAPredict</RootNamespace>
     <Authors>John Bayly</Authors>
     <Company>TipsTrade Ltd.</Company>
-    <Copyright />
+    <Copyright>TipsTrade Ltd. 2017</Copyright>
     <PackageId>TipsTrade.PCAPredict-Net</PackageId>
     <PackageProjectUrl>https://github.com/tipstrade/TipsTrade.PCAPredict-Net</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseUrl>https://github.com/tipstrade/TipsTrade.PCAPredict-Net/blob/master/LICENSE</PackageLicenseUrl>
+    <Description>A .Net Standard Client Library PCA Predict API</Description>
+    <PackageReleaseNotes>v.1.0.0.0
+* Initial Release.</PackageReleaseNotes>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
