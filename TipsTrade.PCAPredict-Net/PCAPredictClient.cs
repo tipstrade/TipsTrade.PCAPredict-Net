@@ -73,6 +73,11 @@ namespace TipsTrade.PCAPredict {
       return (await GetResult<GeocodeResult>(request, GeocodeKey)).FirstOrDefault();
     }
 
+    /// <summary>Returns the WGS84 latitude and longitude for the given location. Supports most international locations.</summary>
+    public async Task<UKGeocodeResult> GeocodeAsync(UKGeocodeRequest request) {
+      return (await GetResult<UKGeocodeResult>(request, GeocodeKey)).FirstOrDefault();
+    }
+
     /// <summary>Lists ISO 3166 country codes and names. Also provides additional information about the data available.</summary>
     public async Task<List<ListCountryDataResult>> ListCountyDataAsync(ListCountryDataRequest request) {
       return await GetResult<ListCountryDataResult>(request);
