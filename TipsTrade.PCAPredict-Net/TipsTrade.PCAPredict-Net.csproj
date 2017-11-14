@@ -1,7 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.3</TargetFramework>
+    <TargetFrameworks>netstandard1.3;net45</TargetFrameworks>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
     <RootNamespace>TipsTrade.PCAPredict</RootNamespace>
     <Authors>John Bayly</Authors>
     <Company>TipsTrade Ltd.</Company>
@@ -11,7 +12,10 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseUrl>https://github.com/tipstrade/TipsTrade.PCAPredict-Net/blob/master/LICENSE</PackageLicenseUrl>
     <Description>A .Net Standard Client Library PCA Predict API</Description>
-    <PackageReleaseNotes>v.1.0.0.2
+    <PackageReleaseNotes>v.1.0.0.3
+* Add: Target multiple frameworks
+
+v.1.0.0.2
 * Fix Model.FindResult.ToString()
 
 v.1.0.0.1
@@ -20,9 +24,9 @@ v.1.0.0.1
 v.1.0.0.0
 * Initial Release.</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <AssemblyVersion>1.0.0.2</AssemblyVersion>
-    <FileVersion>1.0.0.2</FileVersion>
-    <Version>1.0.0.2</Version>
+    <AssemblyVersion>1.0.0.3</AssemblyVersion>
+    <FileVersion>1.0.0.3</FileVersion>
+    <Version>1.0.0.3</Version>
     <Product>TipsTrade.PCAPredict-Net</Product>
   </PropertyGroup>
 
@@ -30,12 +34,23 @@ v.1.0.0.0
     <DocumentationFile>bin\Release\netstandard1.3\TipsTrade.PCAPredict-Net.xml</DocumentationFile>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
+    <PackageReference Include="NETStandard.Library" Version="1.6.1" />
     <PackageReference Include="System.Net.Requests" Version="4.3.0" />
     <PackageReference Include="System.Reflection.Extensions" Version="4.3.0" />
     <PackageReference Include="System.Reflection.TypeExtensions" Version="4.4.0" />
     <PackageReference Include="System.Runtime.Extensions" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
   </ItemGroup>
 
 </Project>
