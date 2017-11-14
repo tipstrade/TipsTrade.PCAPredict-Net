@@ -22,16 +22,20 @@ namespace TipsTrade.PCAPredict.Model {
     #region Enumerations
     /// <summary>Contains the available values for the Type property.</summary>
     public enum NumberType {
+#pragma warning disable CS1591
       Mobile,
       Landline,
       VOIP
+#pragma warning restore CS1591
     }
 
     /// <summary>Contains the available values for the IsValid property.</summary>
     public enum ValidType {
+#pragma warning disable CS1591
       Maybe,
       Yes,
       No
+#pragma warning restore CS1591
     }
     #endregion
 

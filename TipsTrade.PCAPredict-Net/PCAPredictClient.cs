@@ -94,6 +94,7 @@ namespace TipsTrade.PCAPredict {
     }
 
     /// <summary>Returns the full address details based on the Id.</summary>
+    /// <param name="request"></param>
     /// <param name="geocode">A flag indicating whether the address found should be geocoded.</param>
     /// <returns></returns>
     public async Task<RetrieveResult> RetrieveAsync(RetrieveRequest request, bool geocode = false) {

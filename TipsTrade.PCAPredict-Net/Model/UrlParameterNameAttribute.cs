@@ -8,7 +8,7 @@ namespace TipsTrade.PCAPredict.Model {
     public string Name { get; set; }
 
     /// <summary>Creates an instance of the TipsTrade.PCAPredict.Model.UrlParameterNameAttribute class.</summary>
-    /// <param name="path">The name of the url parameter.</param>
+    /// <param name="name">The name of the url parameter.</param>
     public UrlParameterNameAttribute(string name) {
       Name = name;
     }

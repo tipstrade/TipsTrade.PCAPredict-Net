@@ -5,6 +5,7 @@ namespace TipsTrade.PCAPredict.Model {
   /// <summary>Represents a PCA Predict Capture+ Address Retrieve request.</summary>
   public class RetrieveRequest : ApiRequestBase {
     #region Properties
+#pragma warning disable CS1591
     public string Field1 { get; set; }
 
     public string Field2 { get; set; }
@@ -44,6 +45,7 @@ namespace TipsTrade.PCAPredict.Model {
     public string Field19 { get; set; }
 
     public string Field20 { get; set; }
+#pragma warning restore CS1591
 
     /// <summary>The Id from a Find method to retrieve the details for.</summary>
     public string Id { get; set; }
@@ -58,22 +60,27 @@ namespace TipsTrade.PCAPredict.Model {
     #region Enumerations
     /// <summary>Contains the available values for the Type property.</summary>
     public enum PropertyType {
+#pragma warning disable CS1591
       Unknown,
       Residential,
       Commercial
+#pragma warning restore CS1591
     }
 
     /// <summary>Contains the available values for the DataLevel property.</summary>
     public enum PropertyDataLevel {
+#pragma warning disable CS1591
       Unknown,
       Premise,
       RangedPremise,
       Street,
       City
+#pragma warning restore CS1591
     }
     #endregion
 
     #region API Properties
+#pragma warning disable CS1591
     public string Id { get; set; }
 
     public string DomesticId { get; set; }
@@ -189,6 +196,7 @@ namespace TipsTrade.PCAPredict.Model {
     public string Field19 { get; set; }
 
     public string Field20 { get; set; }
+#pragma warning restore CS1591
     #endregion
 
     #region Additional properties

@@ -26,7 +26,7 @@ namespace TipsTrade.PCAPredict {
     /// The exception that is the cause of the current exception, or a null reference
     /// (Nothing in Visual Basic) if no inner exception is specified.
     /// </param>
-    public PCAPredictException(string message, Exception innerEception = null) : this(null, null, message, null, innerEception) {
+    public PCAPredictException(string message, Exception innerException = null) : this(null, null, message, null, innerException) {
     }
 
     /// <summary>

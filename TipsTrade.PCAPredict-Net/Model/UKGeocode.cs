@@ -21,8 +21,10 @@ namespace TipsTrade.PCAPredict.Model {
     #region Enumerations
     /// <summary>Contains the available values for the Type property.</summary>
     public enum AccuractyType {
+#pragma warning disable CS1591
       Standard,
       Property
+#pragma warning restore CS1591
     }
     #endregion
 
