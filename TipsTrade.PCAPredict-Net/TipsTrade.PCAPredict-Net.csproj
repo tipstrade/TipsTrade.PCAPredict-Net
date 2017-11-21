@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.3;net45</TargetFrameworks>
+    <TargetFrameworks>netcoreapp1.0;netstandard1.3;net45</TargetFrameworks>
     <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
     <RootNamespace>TipsTrade.PCAPredict</RootNamespace>
     <Authors>John Bayly</Authors>
@@ -12,7 +12,11 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseUrl>https://github.com/tipstrade/TipsTrade.PCAPredict-Net/blob/master/LICENSE</PackageLicenseUrl>
     <Description>A .Net Standard Client Library PCA Predict API</Description>
-    <PackageReleaseNotes>v.1.0.0.3
+    <PackageReleaseNotes>v.1.0.0.4
+* Add .Net Core 1.0 support
+* Fix XML documentation
+
+v.1.0.0.3
 * Add: Target multiple frameworks
 
 v.1.0.0.2
@@ -22,28 +26,31 @@ v.1.0.0.1
 * Add XML documentation
 
 v.1.0.0.0
-* Initial Release.</PackageReleaseNotes>
+* Initial Release.
+    </PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <AssemblyVersion>1.0.0.3</AssemblyVersion>
-    <FileVersion>1.0.0.3</FileVersion>
-    <Version>1.0.0.3</Version>
+    <AssemblyVersion>1.0.0.4</AssemblyVersion>
+    <FileVersion>1.0.0.4</FileVersion>
+    <Version>1.0.0.4</Version>
     <Product>TipsTrade.PCAPredict-Net</Product>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netstandard1.3\TipsTrade.PCAPredict-Net.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\$(TargetFramework)\TipsTrade.PCAPredict-Net.xml</DocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp1.0' ">
+    <PackageReference Include="System.Net.Requests" Version="4.3.0" />
+    <PackageReference Include="System.Reflection.TypeExtensions" Version="4.4.0" />
+  </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
     <PackageReference Include="NETStandard.Library" Version="1.6.1" />
     <PackageReference Include="System.Net.Requests" Version="4.3.0" />
-    <PackageReference Include="System.Reflection.Extensions" Version="4.3.0" />
     <PackageReference Include="System.Reflection.TypeExtensions" Version="4.4.0" />
-    <PackageReference Include="System.Runtime.Extensions" Version="4.3.0" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Net.Http" />
