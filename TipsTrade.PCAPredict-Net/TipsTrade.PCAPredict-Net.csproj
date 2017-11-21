@@ -11,7 +11,7 @@
     <PackageProjectUrl>https://github.com/tipstrade/TipsTrade.PCAPredict-Net</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseUrl>https://github.com/tipstrade/TipsTrade.PCAPredict-Net/blob/master/LICENSE</PackageLicenseUrl>
-    <Description>A .Net Standard Client Library PCA Predict API</Description>
+    <Description>A .Net Client Library PCA Predict API</Description>
     <PackageReleaseNotes>v.1.0.0.4
 * Add .Net Core 1.0 support
 * Fix XML documentation

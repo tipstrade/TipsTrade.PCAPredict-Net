@@ -1,2 +1,2 @@
 # TipsTrade.PCAPredict-Net
-A .Net Standard Client Library PCA Predict API
+A .Net Client Library PCA Predict API
