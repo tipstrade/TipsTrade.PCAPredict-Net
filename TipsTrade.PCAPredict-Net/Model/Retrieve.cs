@@ -72,6 +72,7 @@ namespace TipsTrade.PCAPredict.Model {
 #pragma warning disable CS1591
       Unknown,
       Premise,
+      Range,
       RangedPremise,
       Street,
       City
