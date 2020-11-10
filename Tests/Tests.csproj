@@ -6,6 +6,8 @@
     <IsPackable>false</IsPackable>
 
     <RootNamespace>TipsTrade.PCAPredict.Tests</RootNamespace>
+
+    <Version>1.0.0.5</Version>
   </PropertyGroup>
 
   <ItemGroup>
